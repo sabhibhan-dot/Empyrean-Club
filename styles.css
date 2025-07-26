@@ -9,41 +9,41 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  background: #E6E6FA; /* Light Purple */
-  color: #000000;
+  background: #E6E6FA;
 }
 
 .logo {
   max-width: 200px;
   height: auto;
   display: block;
-  margin: 0 auto 10px; /* Space below logo for text */
+  margin: 0 auto 10px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
-  color: #000080; /* Dark blue to match blue logo theme */
+  color: #000080;
 }
 
 .moto {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: italic;
   margin: 0;
-  color: #000080; /* Dark blue to match blue logo theme */
+  color: #000080;
 }
 
 #banner {
   width: 100%;
-  overflow: hidden;
-  margin-bottom: 20px; /* Space below moto for banner */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .banner-img {
-  width: 100%; /* Default width back to full */
-  height: auto; /* Default height back to natural */
-  display: block;
-  margin: 0 auto; /* Centers the image */
+  max-width: 200px; /* Matches logo width */
+  max-height: 200px; /* Matches logo height */
+  width: auto;
+  height: auto;
+  display: inline-block;
 }
 
 section {
@@ -53,7 +53,7 @@ section {
 
 h2 {
   color: #800080;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 #office-bearers .bearers-list {
@@ -63,30 +63,19 @@ h2 {
   gap: 20px;
 }
 
-.bearer-category {
-  width: 100%;
-  font-weight: bold;
-  color: #4169E1; /* Royal Blue for subheadings */
-}
-
 .bearer {
   background: #F0F0F0;
   padding: 10px;
   border-radius: 5px;
-  width: 250px;
+  width: 220px;
 }
 
-.bearer .photo-placeholder {
+.photo-placeholder {
   width: 100px;
   height: 100px;
   background: #DDD;
   margin: 0 auto 10px;
   border-radius: 50%;
-  transition: transform 0.3s;
-}
-
-.bearer .photo-placeholder:hover {
-  transform: scale(1.5); /* 1.5x zoom on hover */
 }
 
 .bearer p {
@@ -101,39 +90,23 @@ h2 {
   font-style: italic;
 }
 
-#mom p {
-  background: #F0F0F0;
-  padding: 15px;
-  border: 1px dashed #800080;
-}
-
-#event-calendar ul {
-  list-style: none;
-  padding: 0;
-}
-
 #event-gallery .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
   justify-content: center;
 }
 
 .photo-item {
-  width: 200px;
-  height: 150px;
+  width: 180px;
+  height: 135px;
   object-fit: cover;
   border-radius: 5px;
   transition: transform 0.3s;
 }
 
 .photo-item:hover {
-  transform: scale(2); /* 2x zoom on hover */
-}
-
-#about-us p {
-  max-width: 800px;
-  margin: 0 auto;
+  transform: scale(1.8); /* Slightly less zoom for better UX */
 }
 
 #connect {
@@ -142,14 +115,14 @@ h2 {
 }
 
 .social-links {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .social-links a {
-  margin: 0 15px;
+  margin: 0 10px;
   color: #800080;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: color 0.3s;
 }
 
@@ -157,58 +130,12 @@ h2 {
   margin-right: 5px;
 }
 
-/* Original company colors for social media icons */
-.social-links a[href*="instagram"] i {
-  color: #E1306C; /* Instagram pink-purple */
-}
-
-.social-links a[href*="linkedin"] i {
-  color: #0077B5; /* LinkedIn blue */
-}
-
-.social-links a[href*="youtube"] i {
-  color: #FF0000; /* YouTube red */
-}
-
-.social-links a[href*="x.com"] i,
-.social-links a[href*="twitter"] i {
-  color: #1DA1F2; /* Twitter blue */
-}
-
 .social-links a:hover {
-  color: #DDA0DD; /* Lighter purple on hover */
-}
-
-.contact-info {
-  margin-top: 20px;
-  font-size: 1rem;
-}
-
-.contact-info p {
-  margin: 5px 0;
-}
-
-.contact-info .label {
-  color: #800080; /* Purple for labels */
-}
-
-.contact-info .detail {
-  color: #000000; /* Black for details */
-}
-
-.contact-info a.detail {
-  text-decoration: none;
-}
-
-.contact-info a.detail:hover {
-  text-decoration: underline; /* Underline on hover for email link */
+  color: #DDA0DD;
 }
 
 .recruitment-form {
-  margin-top: 20px;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 15px;
 }
 
 .recruitment-form h3 {
@@ -219,7 +146,7 @@ h2 {
 .recruitment-form .form-link {
   color: #800080;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .recruitment-form .form-link:hover {
